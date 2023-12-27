@@ -1,1 +1,44 @@
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.box1, .box2, .box3 {
+    box-sizing: border-box; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc;   
+    padding: 20px;            
+    margin: 10px;             
+}
+
+/* Desktop view (992px and above) */
+@media (min-width: 992px) {
+    .box1, .box2, .box3 {
+        width: 30.33%; 
+        float: left;
+       
+    }
+}
+
+/* Tablet view (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .box1, .box2, .box3 {
+        width: 33.33%; 
+        float: left;
+    }
+}
+
+/* Mobile view (equal to or less than 767px) */
+@media (max-width: 767px) {
+    .box1, .box2, .box3 {
+        width: 100%; 
+        float: none; 
+    }
+}
+
